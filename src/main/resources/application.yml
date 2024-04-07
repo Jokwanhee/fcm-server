@@ -1,0 +1,26 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /
+    encoding:
+      charset: utf-8
+      force: true
+
+spring:
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: false
+        format_sql: true
+        highlight_sql: true
+
+
+logging:
+  level:
+    org:
+      springframework: debug
+      web: debug
+
